@@ -1,23 +1,22 @@
 include https://raw.githubusercontent.com/codemonstur/bobfiles/master/foss-lib-github-maven
 
 vendor: com.github.codemonstur
-name: test-maven-deploy
+name: testmavendeploy
 version: 2
 description: Empty project used for testing deployment to Maven Central.
-url: https://github.com/codemonstur/test-maven-deploy
-scm:
-  connection: scm:git:https://github.com/codemonstur/test-maven-deploy.git
-  developerConnection: scm:git:https://github.com/codemonstur/test-maven-deploy.git
-  url: https://github.com/codemonstur/test-maven-deploy
 license:
   name: MIT
-  url: https://opensource.org/licenses/MIT
 developer:
   name: Jurgen Voorneveld
   email: jegvoorneveld@gmail.com
-packaging: jar
+packaging: fatjar
 enablePreview: false
 release: 19
+dependencies:
+  - repository: org.fusesource.jansi:jansi:2.4.0
+#  - project: ../bobthebuildtool
+#  - repository: com.google.code.gson:gson:2.10
+#  - repository: com.hubspot.jinjava:jinjava:2.6.0
 
 test-deploy
     run-task -i build
