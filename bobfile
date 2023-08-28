@@ -13,7 +13,8 @@ packaging: fatjar
 enablePreview: false
 release: 19
 dependencies:
-  - repository: org.fusesource.jansi:jansi:2.4.0
+#  - repository: org.fusesource.jansi:jansi:2.4.0
+  - repository: io.undertow:undertow-core:2.3.8.Final
 #  - project: ../bobthebuildtool
 #  - repository: com.google.code.gson:gson:2.10
 #  - repository: com.hubspot.jinjava:jinjava:2.6.0
